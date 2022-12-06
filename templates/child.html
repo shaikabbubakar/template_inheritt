@@ -1,0 +1,9 @@
+{% extends 'parent.html' %}
+{% block title %}
+    <title>child</title>
+    {% endblock %}
+    {% block body_block %}
+    <h1>child html page</h1>
+    <h2 class="btn btn-danger">child button</h2>
+    <h5 class="btn btn-warning"><a href="{% url 'parent' %}">go to parent html</a></h5>
+    {% endblock %}
